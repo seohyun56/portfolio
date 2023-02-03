@@ -61,16 +61,15 @@ nav .gnb li {
 }
 .skillContainer .skill .skillFlex {
     flex-direction: row;
+    justify-content: space-between;
 }
 .skillContainer .skill .skillFlex h3 {
     font-size: 40px;
     margin-right: 50px;
 }
-.skillContainer .skill .skillFlex .skillDetail {
-
-}
 .skillContainer .skill .skillFlex .skillDetail li {
     font-size: 20px;
+    text-align: right;
 }
 
 /* about container */
