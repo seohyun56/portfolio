@@ -81,7 +81,7 @@ nav .toggle_btn {
 }
 .projectContainer h2 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 70px;
     transform: translateY(-20px);
 }
 .projectContainer .prjBox {
@@ -170,6 +170,10 @@ nav .toggle_btn {
 .skillContainer .skill .skillFlex .skillDetail li:last-child {
     padding-bottom: 50px;
 }
+.skillContainer .skill .skillFlex:last-child .skillDetail li:first-child {
+    font-weight: 500;
+    color: #4E79E8;
+}
 
 /* about container */
 .aboutContainer {
@@ -189,7 +193,7 @@ nav .toggle_btn {
     margin-top: 50px;
     height: 100px;
 }
-.aboutContainer .consoleText h4 {
+.aboutContainer .consoleText h3 {
     font-weight: 500;
     font-size: 13px;
     margin-bottom: 15px;
@@ -218,11 +222,11 @@ nav .toggle_btn {
     padding-bottom: 120px;
     position: relative;
 }
-.contact h2 {
+.contact h3 {
     font-weight: 700;
     font-size: 40px;
 }
-.contact h3 {
+.contact h4 {
     font-weight: 600;
     font-size: 26px;
 }

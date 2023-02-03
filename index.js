@@ -67,8 +67,8 @@ aboutBtn.addEventListener("click", (e) => {
     gnb.classList.remove("active");
 });
 
-// about container auto text
-const text1 = "맡은 일에 //최선 을 다하겠습니다.";
+// about container auto text1
+const text1 = '맡은 일에 "최선"을 다하겠습니다.';
 let n = 0; 
 const txtInterval1 = setInterval(() => {
     if (n < text1.length) {
@@ -78,23 +78,20 @@ const txtInterval1 = setInterval(() => {
         txt1.textContent = "";
         n = 0;
     };
-}, 150);
-
-
-const text2 = "변화에 맞게 끊임없이 [노력]하겠습니다.";
+}, 200);
+// about container auto text2
+const text2 = '변화에 맞게 끊임없이 "노력"하겠습니다.';
 let i = 0;
 
-const txtTimeout = setTimeout(() => {
-    const txtInterval2 = setInterval(() => {
-        if (i < text2.length) {
-            txt2.textContent += text2[i];
-            i++;
-        } else {
-            txt2.textContent = "";
-            i = 0;
-        };
-    }, 150);
-}, 3000);
+const txtInterval2 = setInterval(() => {
+    if (i < text2.length) {
+        txt2.textContent += text2[i];
+        i++;
+    } else {
+        txt2.textContent = "";
+        i = 0;
+    };
+}, 200);
 
 // goUp 
 goUp.addEventListener("click", () => {

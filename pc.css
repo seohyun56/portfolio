@@ -24,10 +24,7 @@ nav .gnb li {
 }
 
 /* project container */
-.projectContainer h2 {
-    font-size: 100px;
-}
-/* .projectContainer {
+.projectContainer {
     padding: 130px 0;
     text-transform: capitalize;
 }
@@ -38,6 +35,7 @@ nav .gnb li {
     border: none;
     display: flex;
     justify-content: center; 
+    margin-top: 60px;
 }
 .projectContainer .prjBox .prj {
     border-top: 5px solid #000;
@@ -50,7 +48,7 @@ nav .gnb li {
 }
 .projectContainer .prjBox .prj3 {
     margin: 0;
-} */
+}
 
 /* skill container */
 .skillContainer {
@@ -62,6 +60,7 @@ nav .gnb li {
 .skillContainer .skill .skillFlex {
     flex-direction: row;
     justify-content: space-between;
+    /* padding: 0 100px 0 0; */
 }
 .skillContainer .skill .skillFlex h3 {
     font-size: 40px;
@@ -79,7 +78,7 @@ nav .gnb li {
 .aboutContainer h2 {
     font-size: 80px;
 }
-.aboutContainer .consoleText h4 {
+.aboutContainer .consoleText h3 {
     font-size: 30px;
 }
 .aboutContainer .consoleText .autoTextBox svg {  
@@ -91,10 +90,10 @@ nav .gnb li {
 }
 
 /* contact */
-.contact h2 {
+.contact h3 {
     font-size: 60px;
 }
-.contact h3 {
+.contact h4 {
     font-size: 50px;
 }
 .contact p {
