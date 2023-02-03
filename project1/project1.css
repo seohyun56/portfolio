@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4E79E8;
+    border-radius: 20px;
+}
+
+/* 드래그 색상 */
+::selection {
+    background-color: #4E79E8;
+    color: #F9F991;
+}
+
+body {
+    font-family: var(--pretendard);
+    background-color: #F7F7F7;
+}
+
+/* nav */
+nav {
+    border-bottom: 5px solid #000;
+    padding: 25px 300px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+nav.on {
+    background-color: #fff;
+}
+nav h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+nav h1 span {
+    color: #4E79E8;
+    text-decoration: line-through;
+}
+nav .gnb {
+    display: flex;
+    align-items: center;
+}
+nav .gnb a {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}

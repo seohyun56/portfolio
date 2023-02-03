@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+main {
+    padding: 0 200px;
+}
+
+/* nav */
+nav {
+    padding: 20px 200px;
+}
+nav .gnb {
+    display: flex;
+    align-items: center;
+    width: auto;
+    position: static;
+    background-color: transparent;
+}
+nav .gnb li {
+    border-bottom: none;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+nav .gnb li a {
+    color: #000;
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav .toggle_btn {
+    display: none;
+}
+
+/* project container */
+.projectContainer h2 {
+    font-size: 80px;
+}
+
+/* skill container */
+.skillContainer h2 {
+    font-size: 80px;
+}
+.skillContainer .skill .skillFlex h3 {
+    font-size: 35px;
+}
+.skillContainer .skill .skillFlex .skillDetail li {
+    font-size: 20px;
+}
+
+/* about container */
+.aboutContainer {
+    padding-bottom: 165px;
+}
+.aboutContainer h2 {
+    font-size: 70px;
+}
+.aboutContainer .consoleText h4 {
+    font-size: 23px;
+}
+.aboutContainer .consoleText .autoTextBox svg {  
+    width: 10px;
+}
+.aboutContainer .consoleText .autoTextBox p {    
+    font-size: 25px;
+    height: 27px;
+}
+
+/* contact */
+.contact {
+    padding-bottom: 100px;
+}
+.contact h2 {
+    font-size: 50px;
+}
+.contact h3 {
+    font-size: 40px;
+}
+.contact p {
+    font-size: 25px;
+}
+.contact a {
+    font-size: 25px;
+}
+
+/* footer */
+footer {
+    font-size: 18px;
+}
+
+/* goUp */
+.goUp {
+    font-size: 18px;
+    right: 200px;
+    bottom: 5px;
+}
+.goUp svg {
+    width: 18px;
+    margin-top: 4px;
+}

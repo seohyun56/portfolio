@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4E79E8;
+}
+
+main {
+    padding: 0 300px;
+}
+
+/* nav */
+nav {
+    padding: 25px 300px;
+}
+nav .gnb li {
+    margin-left: 30px;
+}
+
+/* project container */
+.projectContainer h2 {
+    font-size: 100px;
+}
+/* .projectContainer {
+    padding: 130px 0;
+    text-transform: capitalize;
+}
+.projectContainer h2 {
+    font-size: 120px;
+}
+.projectContainer .prjBox {
+    border: none;
+    display: flex;
+    justify-content: center; 
+}
+.projectContainer .prjBox .prj {
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    width: 20.833vw; 
+    height: 20.833vw;
+    margin-right: 3vw;
+    cursor: pointer;
+    position: relative;
+}
+.projectContainer .prjBox .prj3 {
+    margin: 0;
+} */
+
+/* skill container */
+.skillContainer {
+    padding: 10px 0;
+}
+.skillContainer h2 {
+    font-size: 100px;
+}
+.skillContainer .skill .skillFlex {
+    flex-direction: row;
+}
+.skillContainer .skill .skillFlex h3 {
+    font-size: 40px;
+    margin-right: 50px;
+}
+.skillContainer .skill .skillFlex .skillDetail {
+
+}
+.skillContainer .skill .skillFlex .skillDetail li {
+    font-size: 20px;
+}
+
+/* about container */
+.aboutContainer {
+    padding-top: 130px;
+}
+.aboutContainer h2 {
+    font-size: 80px;
+}
+.aboutContainer .consoleText h4 {
+    font-size: 30px;
+}
+.aboutContainer .consoleText .autoTextBox svg {  
+    width: 12px;
+}
+.aboutContainer .consoleText .autoTextBox p {    
+    font-size: 35px;
+    height: 37px;
+}
+
+/* contact */
+.contact h2 {
+    font-size: 60px;
+}
+.contact h3 {
+    font-size: 50px;
+}
+.contact p {
+    font-size: 30px;
+}
+.contact a {
+    font-size: 30px;
+}
+
+/* goUp */
+.goUp {
+    right: 300px;
+}
+.goUp:hover {
+    transform: translateY(-5px);
+}

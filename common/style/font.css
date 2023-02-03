@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* font-family: 'DM Serif Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* PretendardVariable */
+@font-face {
+    font-family: 'Pretendard Variable';
+    src: url(../fonts/PretendardVariable.woff2) format('woff2-variations');
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+}
