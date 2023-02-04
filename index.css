@@ -216,6 +216,16 @@ nav .toggle_btn {
     font-size: 15px;
     height: 17px;
 }
+.aboutContainer .consoleText .autoTextBox p::after {
+    content: '';
+    margin-left: 10px;
+    border-right: 5px solid #000;
+    animation: cursor 0.9s infinite ease;
+}
+@keyframes cursor {
+    from { border-right: 5px solid #4E79E8; }
+    to { border-right: 5px solid #000; }
+  }
 
 /* contact */
 .contact {
@@ -245,6 +255,14 @@ footer {
     font-weight: 400;
 }
 
+/* mouse cursor */
+.mouseCursor {
+    width: 80px; height: 80px;
+    position: absolute;
+    top: 0; left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
 /* goUp */
 .goUp {
     font-size: 10px;

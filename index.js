@@ -14,6 +14,9 @@ const aboutContainer = document.querySelector(".aboutContainer");
 const txt1 = document.querySelector(".consoleText .autoTextBox .txt1");
 const txt2 = document.querySelector(".consoleText .autoTextBox .txt2");
 
+// mouse cursor
+const mouseCursor = document.querySelector(".mouseCursor");
+
 // goUp
 const goUp = document.querySelector(".goUp");
 
@@ -78,12 +81,11 @@ const txtInterval1 = setInterval(() => {
         txt1.textContent = "";
         n = 0;
     };
-}, 200);
+}, 230);
 // about container auto text2
 const text2 = '변화에 맞게 끊임없이 "노력"하겠습니다.';
 let i = 0;
-
-const txtInterval2 = setInterval(() => {
+const txtInterval2 = setInterval((e) => {
     if (i < text2.length) {
         txt2.textContent += text2[i];
         i++;
@@ -92,6 +94,12 @@ const txtInterval2 = setInterval(() => {
         i = 0;
     };
 }, 200);
+
+// mouse cursor
+addEventListener("mousemove", e => {
+    mouseCursor.style.left = e.pageX + "px";
+    mouseCursor.style.top = e.pageY + "px";
+})
 
 // goUp 
 goUp.addEventListener("click", () => {
