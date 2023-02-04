@@ -103,6 +103,11 @@ nav .gnb li {
     font-size: 30px;
 }
 
+/* mouse cursor */
+.mouseCursor {
+    display: block;
+}
+
 /* goUp */
 .goUp {
     right: 300px;

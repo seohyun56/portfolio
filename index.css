@@ -262,7 +262,9 @@ footer {
     top: 0; left: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    display: none;
 }
+
 /* goUp */
 .goUp {
     font-size: 10px;
