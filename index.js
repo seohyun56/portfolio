@@ -5,18 +5,19 @@ const gnb = document.querySelector("nav .gnb");
 const prjBtn = document.querySelector("nav .gnb li:nth-child(1)");
 const skillBtn = document.querySelector("nav .gnb li:nth-child(2)");
 const aboutBtn = document.querySelector("nav .gnb li:nth-child(3)");
+const navA = document.querySelector("nav .gnb li a");
 // nav toggle
 const navToggle = document.querySelector("nav .toggle_btn");
+// project container
+const prj = document.querySelectorAll(".projectContainer .prjBox .prj");
 // skill container
 const skillContainer = document.querySelector(".skillContainer");
 // about container
 const aboutContainer = document.querySelector(".aboutContainer");
 const txt1 = document.querySelector(".consoleText .autoTextBox .txt1");
 const txt2 = document.querySelector(".consoleText .autoTextBox .txt2");
-
 // mouse cursor
 const mouseCursor = document.querySelector(".mouseCursor");
-
 // goUp
 const goUp = document.querySelector(".goUp");
 
@@ -32,9 +33,9 @@ addEventListener("scroll", () => {
 });
 
 // nav span color
-const colorArr = ["#4E79E8", "yellowgreen","lightpink", "lightskyblue"];
+const colorArr = ["#4E79E8", "#56E04D","hotpink"];
 const autoColor = setInterval(() => {
-    let ran = Math.trunc(Math.random() * 4);
+    let ran = Math.trunc(Math.random() * 3);
     span.style.color = colorArr[ran];
 }, 500);
 
@@ -68,6 +69,18 @@ aboutBtn.addEventListener("click", (e) => {
         behavior: "smooth",
     });
     gnb.classList.remove("active");
+});
+
+// project container link
+const prjArray = [
+    "./project1/project1.html",
+    "./project2/project2.html",
+    "./project3/project3.html"
+]
+prj.forEach((project, idx) => {
+    project.addEventListener("click", () => {
+        location.href = prjArray[idx];
+    });
 });
 
 // about container auto text1
