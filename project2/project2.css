@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* 드래그 색상 */
+::selection {
+    background-color: #4E79E8;
+    color: #F9F991;
+}
+
+body {
+    font-family: var(--pretendard);
+    background-color: #F7F7F7;
+    overflow-x: hidden;
+}

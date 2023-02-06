@@ -30,6 +30,32 @@ nav .gnb li a {
     margin: 0;
     text-align: center;
 }
+nav .gnb li a::after {
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    width: 0;
+    height: 5px;
+    background-color: #4E79E8;
+    transition: 0.5s;
+}
+nav .gnb li a::before {
+    content:"";
+    position: absolute;
+    right: 50%;
+    top: 25px;
+    width: 0;
+    height: 5px;
+    background-color: #4E79E8;
+    transition: 0.5s;
+}
+nav .gnb li a:hover::after {
+    width: 50%;
+}
+nav .gnb li a:hover::before {
+    width: 50%;
+}
 nav .toggle_btn {
     display: none;
 }
@@ -55,7 +81,7 @@ nav .toggle_btn {
     padding-bottom: 165px;
 }
 .aboutContainer h2 {
-    font-size: 70px;
+    font-size: 75px;
 }
 .aboutContainer .consoleText h3 {
     font-size: 23px;
@@ -88,6 +114,11 @@ nav .toggle_btn {
 /* footer */
 footer {
     font-size: 18px;
+}
+
+/* mouse cursor */
+.mouseCursor {
+    display: block;
 }
 
 /* goUp */

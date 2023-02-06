@@ -76,7 +76,7 @@ nav .gnb li {
     padding-top: 130px;
 }
 .aboutContainer h2 {
-    font-size: 80px;
+    font-size: 90px;
 }
 .aboutContainer .consoleText h3 {
     font-size: 30px;
@@ -101,11 +101,6 @@ nav .gnb li {
 }
 .contact a {
     font-size: 30px;
-}
-
-/* mouse cursor */
-.mouseCursor {
-    display: block;
 }
 
 /* goUp */

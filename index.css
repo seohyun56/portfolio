@@ -68,32 +68,6 @@ nav .gnb li a {
     text-align: right;
     position: relative;
 }
-nav .gnb li a::after {
-    content:"";
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    width: 0;
-    height: 5px;
-    background-color: #4E79E8;
-    transition: 0.5s;
-}
-nav .gnb li a::before {
-    content:"";
-    position: absolute;
-    right: 50%;
-    top: 25px;
-    width: 0;
-    height: 5px;
-    background-color: #4E79E8;
-    transition: 0.5s;
-}
-nav .gnb li a:hover::after {
-    width: 50%;
-}
-nav .gnb li a:hover::before {
-    width: 50%;
-}
 nav .toggle_btn {
     display: block;
     background: url(./images/bars-solid.svg) no-repeat 50% / contain;
@@ -287,7 +261,7 @@ footer {
 .mouseCursor {
     width: 80px; height: 80px;
     position: absolute;
-    top: 0; left: 0;
+    top: -50px; left: -50px;
     transform: translate(-50%, -50%);
     pointer-events: none;
     display: none;
