@@ -1,3 +1,5 @@
+// a
+const a = document.querySelectorAll("a");
 // nav
 const nav = document.querySelector("nav");
 const span = document.querySelector("nav span");
@@ -6,10 +8,11 @@ const prjBtn = document.querySelector("nav .gnb li:nth-child(1)");
 const skillBtn = document.querySelector("nav .gnb li:nth-child(2)");
 const aboutBtn = document.querySelector("nav .gnb li:nth-child(3)");
 const navA = document.querySelector("nav .gnb li a");
-// nav toggle
-const navToggle = document.querySelector("nav .toggle_btn");
+const navToggle = document.querySelector("nav .toggleBtn");
 // project container
 const prj = document.querySelectorAll(".projectContainer .prjBox .prj");
+const prjBox2 = document.querySelector(".projectContainer .prjBox2");
+const moreBtn = document.querySelector(".projectContainer .moreBtn");
 // skill container
 const skillContainer = document.querySelector(".skillContainer");
 // about container
@@ -18,8 +21,19 @@ const txt1 = document.querySelector(".consoleText .autoTextBox .txt1");
 const txt2 = document.querySelector(".consoleText .autoTextBox .txt2");
 // mouse cursor
 const mouseCursor = document.querySelector(".mouseCursor");
+const cursorSvg = document.querySelector(".mouseCursor svg");
 // goUp
 const goUp = document.querySelector(".goUp");
+
+// a hover cursor
+a.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        cursorSvg.classList.add("over");
+    });
+    item.addEventListener("mouseout", () => {
+        cursorSvg.classList.remove("over");
+    });
+});
 
 // nav, goUp scroll
 addEventListener("scroll", () => {
@@ -57,7 +71,7 @@ prjBtn.addEventListener("click", (e) => {
 skillBtn.addEventListener("click", (e) => {
     e.preventDefault();
     scrollTo({
-        top: skillContainer.offsetTop - 130,
+        top: skillContainer.offsetTop - 150,
         behavior: "smooth",
     });
     gnb.classList.remove("active");
@@ -65,13 +79,13 @@ skillBtn.addEventListener("click", (e) => {
 aboutBtn.addEventListener("click", (e) => {
     e.preventDefault();
     scrollTo({
-        top: aboutContainer.offsetTop - 10,
+        top: aboutContainer.offsetTop,
         behavior: "smooth",
     });
     gnb.classList.remove("active");
 });
 
-// project container link
+// project container link, hover cursor
 const prjArray = [
     "./project1/project1.html",
     "./project2/project2.html",
@@ -81,6 +95,24 @@ prj.forEach((project, idx) => {
     project.addEventListener("click", () => {
         location.href = prjArray[idx];
     });
+    project.addEventListener("mouseover", () => {
+        cursorSvg.classList.add("over");
+    });
+    project.addEventListener("mouseout", () => {
+        cursorSvg.classList.remove("over");
+    });
+});
+
+// project container prjBox2 toggle
+moreBtn.addEventListener("click", () => {
+    prjBox2.classList.toggle("morePrj");
+});
+moreBtn.addEventListener("mouseover", () => {
+    cursorSvg.classList.add("over");
+});
+// project container moreBtn hover cursor
+moreBtn.addEventListener("mouseout", () => {
+    cursorSvg.classList.remove("over");
 });
 
 // about container auto text1
@@ -120,4 +152,10 @@ goUp.addEventListener("click", () => {
         top: 0,
         behavior: "smooth",
     });
+});
+goUp.addEventListener("mouseover", () => {
+    cursorSvg.classList.add("over");
+});
+goUp.addEventListener("mouseout", () => {
+    cursorSvg.classList.remove("over");
 });

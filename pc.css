@@ -26,7 +26,6 @@ nav .gnb li {
 /* project container */
 .projectContainer {
     padding: 130px 0;
-    text-transform: capitalize;
 }
 .projectContainer h2 {
     font-size: 120px;
@@ -43,10 +42,18 @@ nav .gnb li {
     width: 20.833vw; 
     height: 20.833vw;
     margin-right: 3vw;
-    cursor: pointer;
-    position: relative;
 }
 .projectContainer .prjBox .prj3 {
+    margin: 0;
+}
+.projectContainer .prjBox2 {
+    margin-top: 30px;
+    display: none;
+}
+.projectContainer .prjBox2.morePrj {
+    display: flex;
+}
+.projectContainer .prjBox .prj6 {
     margin: 0;
 }
 
@@ -60,14 +67,12 @@ nav .gnb li {
 .skillContainer .skill .skillFlex {
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 0 100px 0 0; */
 }
 .skillContainer .skill .skillFlex h3 {
     font-size: 40px;
     margin-right: 50px;
 }
 .skillContainer .skill .skillFlex .skillDetail li {
-    font-size: 20px;
     text-align: right;
 }
 
@@ -108,5 +113,5 @@ nav .gnb li {
     right: 300px;
 }
 .goUp:hover {
-    transform: translateY(-5px);
+    bottom: 8px;
 }

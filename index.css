@@ -68,7 +68,7 @@ nav .gnb li a {
     text-align: right;
     position: relative;
 }
-nav .toggle_btn {
+nav .toggleBtn {
     display: block;
     background: url(./images/bars-solid.svg) no-repeat 50% / contain;
     text-indent: -9999px;
@@ -88,6 +88,7 @@ nav .toggle_btn {
 }
 .projectContainer .prjBox {
     margin-top: 50px;
+    margin-bottom: 25px;
     border: 5px solid #000;
 }
 .projectContainer .prjBox .prj {
@@ -99,7 +100,7 @@ nav .toggle_btn {
 .projectContainer .prjBox .prj h3 {
     position: absolute;
     top: 20px; left: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
 }
 .projectContainer .prjBox .prj h4 {
@@ -117,6 +118,31 @@ nav .toggle_btn {
 .projectContainer .prjBox .prj3 {
     border: none;
     background-image: radial-gradient(circle, #FF248A, #fff);
+}
+.projectContainer .prjBox .prj4 {
+    background-image: radial-gradient(circle, #FCFB56, #fff);
+}
+.projectContainer .prjBox .prj5 {
+    background-image: radial-gradient(circle,#B027FA, #fff);
+}
+.projectContainer .prjBox .prj6 {
+    border: none;
+    background-image: radial-gradient(circle, #FF702B, #fff);
+}
+.projectContainer .moreBtn {
+    font-size: 15px;
+    cursor: pointer;
+}
+.projectContainer .moreBtn svg {
+    margin-left: 3px;
+    margin-top: 10px;
+}
+.projectContainer .prjBox2 {
+    margin-top: 20px;
+    display: none;
+}
+.projectContainer .prjBox2.morePrj {
+    display: block;
 }
 
 /* skill container */
@@ -259,12 +285,20 @@ footer {
 
 /* mouse cursor */
 .mouseCursor {
-    width: 80px; height: 80px;
     position: absolute;
+    z-index: 9999;
     top: -50px; left: -50px;
     transform: translate(-50%, -50%);
     pointer-events: none;
     display: none;
+}
+.mouseCursor svg {
+    transition: 0.3s;
+}
+.mouseCursor svg.over {
+    width: 70px; 
+    height: 70px;
+    transform: rotate(45deg);
 }
 
 /* goUp */
