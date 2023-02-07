@@ -22,6 +22,33 @@ nav {
 nav .gnb li {
     margin-left: 30px;
 }
+/* nav menu hover */
+nav .gnb li a::after {
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    width: 0;
+    height: 5px;
+    background-color: #4E79E8;
+    transition: 0.5s;
+}
+nav .gnb li a::before {
+    content:"";
+    position: absolute;
+    right: 50%;
+    top: 25px;
+    width: 0;
+    height: 5px;
+    background-color: #4E79E8;
+    transition: 0.5s;
+}
+nav .gnb li a:hover::after {
+    width: 50%;
+}
+nav .gnb li a:hover::before {
+    width: 50%;
+}
 
 /* project container */
 .projectContainer {
@@ -106,6 +133,15 @@ nav .gnb li {
 }
 .contact a {
     font-size: 30px;
+    transition: 0.3s;
+}
+.contact a:hover {
+    color: #4E79E8;
+}
+
+/* mouse cursor */
+.mouseCursor {
+    display: block;
 }
 
 /* goUp */

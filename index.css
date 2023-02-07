@@ -132,6 +132,7 @@ nav .toggleBtn {
 .projectContainer .moreBtn {
     font-size: 15px;
     cursor: pointer;
+    display: inline-block;
 }
 .projectContainer .moreBtn svg {
     margin-left: 3px;
@@ -273,7 +274,7 @@ nav .toggleBtn {
 }
 .contact a {
     font-size: 14px;
-    width: 30%;
+    display: inline-block;
 }
 
 /* footer */

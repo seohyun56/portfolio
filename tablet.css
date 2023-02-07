@@ -26,33 +26,6 @@ nav .gnb li a {
     margin: 0;
     text-align: center;
 }
-/* nav menu hover */
-nav .gnb li a::after {
-    content:"";
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    width: 0;
-    height: 5px;
-    background-color: #4E79E8;
-    transition: 0.5s;
-}
-nav .gnb li a::before {
-    content:"";
-    position: absolute;
-    right: 50%;
-    top: 25px;
-    width: 0;
-    height: 5px;
-    background-color: #4E79E8;
-    transition: 0.5s;
-}
-nav .gnb li a:hover::after {
-    width: 50%;
-}
-nav .gnb li a:hover::before {
-    width: 50%;
-}
 nav .toggleBtn {
     display: none;
 }
@@ -112,20 +85,11 @@ nav .toggleBtn {
 }
 .contact a {
     font-size: 25px;
-    transition: 0.3s;
-}
-.contact a:hover {
-    color: #4E79E8;
 }
 
 /* footer */
 footer {
     font-size: 18px;
-}
-
-/* mouse cursor */
-.mouseCursor {
-    display: block;
 }
 
 /* goUp */
