@@ -81,10 +81,17 @@ nav .toggleBtn {
     padding: 80px 0 132px 0;
     text-transform: capitalize;
 }
-.projectContainer h2 {
+.projectContainer .prjTitle h2 {
     font-weight: 700;
     font-size: 70px;
     transform: translateY(-20px);
+}
+.projectContainer .prjTitle a {
+    display: inline-block;
+    background-color: #4E79E8;
+    color: #F9F991;
+    padding: 8px;
+    border-radius: 30px;
 }
 .projectContainer .prjBox {
     margin-top: 50px;

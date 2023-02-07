@@ -54,8 +54,15 @@ nav .gnb li a:hover::before {
 .projectContainer {
     padding: 130px 0;
 }
-.projectContainer h2 {
+.projectContainer .prjTitle {
+    display: flex;
+    align-items: center;
+}
+.projectContainer .prjTitle h2 {
     font-size: 120px;
+}
+.projectContainer .prjTitle a {
+    margin-left: 50px;
 }
 .projectContainer .prjBox {
     border: none;

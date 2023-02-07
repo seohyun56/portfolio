@@ -31,11 +31,11 @@ nav .toggleBtn {
 }
 
 /* project container */
-.projectContainer h2 {
+.projectContainer .prjTitle h2 {
     font-size: 90px;
 }
 .projectContainer .prjBox .prj h3 {
-    font-size: 2em;
+    font-size: 1.7em;
 }
 .projectContainer .moreBtn {
     font-size: 20px;

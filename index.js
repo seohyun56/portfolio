@@ -130,7 +130,7 @@ const txtInterval1 = setInterval(() => {
 // about container auto text2
 const text2 = '변화에 맞게 끊임없이 "노력"하겠습니다.';
 let i = 0;
-const txtInterval2 = setInterval((e) => {
+const txtInterval2 = setInterval(() => {
     if (i < text2.length) {
         txt2.textContent += text2[i];
         i++;
