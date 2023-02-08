@@ -146,6 +146,11 @@ nav .gnb li a:hover::before {
     color: #4E79E8;
 }
 
+footer {
+    font-size: 18px;
+    padding-left: 300px;
+}
+
 /* mouse cursor */
 .mouseCursor {
     display: block;
@@ -153,7 +158,12 @@ nav .gnb li a:hover::before {
 
 /* goUp */
 .goUp {
+    font-size: 18px;
     right: 300px;
+}
+.goUp svg {
+    width: 18px;
+    margin-top: 3px;
 }
 .goUp:hover {
     bottom: 8px;

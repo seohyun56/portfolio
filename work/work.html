@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../common/images/favicon.ico">
+    <title>제작일지</title>
+    <!-- 초기화 css -->
+    <link rel="stylesheet" href="../common/style/reset.css">
+    <!-- font.css -->
+    <link rel="stylesheet" href="../common/style/font.css">
+    <!-- index.css -->
+    <link rel="stylesheet" href="./work.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="./workTablet.css">
+    <link rel="stylesheet" media="(min-width: 1280px)" href="./workPc.css">
+    <!-- css variable -->
+    <link rel="stylesheet" href="../common/style/variable.css">
+    <!-- work.js -->
+    <script defer src="./work.js"></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <!-- 로고 -->
+        <h1><a href="../index.html">we<span>st</span>ring</a></h1>
+    </nav>
+    <!-- main -->
+    <main>
+        <h2>포트폴리오 제작일지</h2>
+        <article class="goal">
+            <h3>1. 목표</h3>
+            <p>디자인부터 코딩까지 직접 하여 지금까지 배운 내용을 적용하고 정리하는 시간을 가진다.</p>
+        </article>
+        <article class="directory">
+            <h3>2. 디렉토리 구조</h3>
+            <img src="./images/디렉토리구조.PNG" alt="디렉토리 구조">
+        </article>
+        <article class="useSkill">
+            <h3>3. 사용 기술</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+            </ul>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Visual Studio Code</li>
+                <li>Figma</li>
+            </ul>
+        </article>
+        <article class="page">
+            <h3>4. 페이지 구성</h3>
+            <h4>미디어 쿼리</h4>
+            <section>
+                <p>미디어 쿼리를 활용하여 모바일, 태블릿, pc에 대응할 수 있는 반응형 홈페이지 구현</p>
+            </section>
+            <h4>nav</h4>
+            <section>
+                <h5>nav 배경색 변경</h5>
+                <p>addEventListener("scroll")을 통해 scrollY > 150일 때 classList.add와 classList.remove를 이용하여 변경</p>
+            </section>
+            <section>
+                <h5>로고 색상 변경</h5>
+                <p>Math.random 객체를 통해 배열 속 색상을 랜덤으로 호출하여 글자색 변경</p>
+            </section>
+            <section>
+                <h5>nav 메뉴를 클릭하면 해당 페이지로 이동</h5>
+                <p>addEventListener("click")을 통해 메뉴를 클릭하면 해당 페이지의 offsetTop으로 이동</p>
+            </section>
+            <h4>main</h4>
+            <section>
+                <h5>project container</h5>
+                <p>배열과 forEach를 사용하여 project 박스 클릭 시 location.href를 통해 프로젝트 페이지로 이동</p>
+                <p>classList.toggle을 통해 더보기 버튼 클릭 시 프로젝트 박스 toggle 효과</p>
+            </section>
+            <section>
+                <h5>skill container</h5>
+                <p>::after를 사용하여 skill 제목에 밑줄 효과 구현</p>
+            </section>
+            <section>
+                <h5>about container</h5>
+                <p>setInterval를 통해 자동타이핑 효과 구현</p>
+            </section>
+            <h4>마우스 커서</h4>
+            <section>
+                <p>addEventListener("mousemove")와 pageX, pageY를 통해 마우스를 따라다니는 svg파일 구현</p>
+                <p>클릭이벤트가 있는 부분에 마우스를 올리면 svg파일이 크기가 작아지며 45도 회전</p>
+            </section>
+            <h4>go up 버튼</h4>
+            <section>
+                <p>addEventListener("scroll")을 통해 scrollY > 150일 때 opacity값 1로 변경</p>
+                <p>addEventListener("click")을 통해 클릭하면 페이지의 top: 0으로 이동</p>
+            </section>
+        </article>
+        <article class="solution">
+            <h3>5. 문제 및 해결</h3>
+            <section>
+                <h4>로고 랜덤 글자색의 범위를 줄일 수는 없을까?</h4>
+                <p>랜덤의 범위를 0 ~ 255로 줬더니 눈에 잘 보이지 않는 색까지 포함되는 문제점 발생</p>
+                <p>이를 해결하기 위해 원하는 색상을 정해 배열에 넣은 후 배열에 있는 색상을 랜덤으로 호출했더니 해결됨</p>
+            </section>
+            <section>
+                <h4>pc버전에서 마우스 커서가 화면 밖으로 넘어가면 왜 가로스크롤이 생길까?</h4>
+                <p>화면 밖으로 넘치면 보여지지 않게 하기 위해 body에 overflow-x: hidden을 줬더니 해결됨</p>
+            </section>
+            <section>
+                <h4>skill 제목에 ::after를 적용했을 때 가로의 길이가 제목의 글자 길이와 같게 할 수 없을까?</h4>
+                <p>::after를 통해 구현한 밑줄 효과의 가로 길이가 글자보다 길어지는 문제점 발생</p>
+                <p>skill의 제목을 감싸는 div에 align-items: flex-start을 적용하여 교차축 기준 시작점에 배치했더니 해결됨</p>
+            </section>
+        </article>
+        <!-- pc용 mouse cursor -->
+        <div class="mouseCursor">
+            <svg width="80" height="80" viewBox="0 0 805 805" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M142.836 407.293C125.471 389.929 111.697 369.314 102.299 346.626C92.9014 323.938 88.0645 299.622 88.0645 275.064C88.0645 250.507 92.9014 226.191 102.299 203.503C111.697 180.815 125.471 160.2 142.836 142.835C160.2 125.471 180.815 111.697 203.503 102.299C226.191 92.9014 250.507 88.0645 275.065 88.0645C299.622 88.0645 323.938 92.9014 346.626 102.299C369.314 111.697 389.929 125.471 407.293 142.835" stroke="#30CA44" stroke-width="15"/>
+                <path d="M396.835 142.836C414.2 125.471 434.815 111.697 457.503 102.299C480.191 92.9014 504.507 88.0645 529.064 88.0645C553.622 88.0645 577.938 92.9014 600.626 102.299C623.314 111.697 643.929 125.471 661.293 142.836C678.658 160.2 692.432 180.815 701.83 203.503C711.228 226.191 716.064 250.507 716.064 275.065C716.064 299.622 711.228 323.938 701.83 346.626C692.432 369.314 678.658 389.929 661.293 407.293" stroke="#30CA44" stroke-width="15"/>
+                <path d="M661.293 396.836C678.658 414.201 692.432 434.815 701.83 457.503C711.227 480.191 716.064 504.508 716.064 529.065C716.064 553.622 711.227 577.939 701.83 600.627C692.432 623.315 678.658 643.929 661.293 661.294C643.929 678.658 623.314 692.433 600.626 701.83C577.938 711.228 553.622 716.065 529.064 716.065C504.507 716.065 480.19 711.228 457.503 701.83C434.815 692.433 414.2 678.658 396.835 661.294" stroke="#30CA44" stroke-width="15"/>
+                <path d="M407.293 661.294C389.929 678.658 369.314 692.433 346.626 701.83C323.938 711.228 299.622 716.065 275.064 716.065C250.507 716.065 226.191 711.228 203.503 701.83C180.815 692.433 160.2 678.658 142.836 661.294C125.471 643.929 111.697 623.315 102.299 600.627C92.9014 577.939 88.0645 553.622 88.0645 529.065C88.0645 504.508 92.9014 480.191 102.299 457.503C111.697 434.815 125.471 414.2 142.836 396.836" stroke="#30CA44" stroke-width="15"/>
+            </svg>
+        </div>
+        <!-- goUp -->
+        <div class="goUp">
+            back to top
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+        </div>
+    </main>
+    <footer>© Joo SeoHyun. All Rights Reserved.</footer>
+</body>
+</html>

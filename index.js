@@ -25,7 +25,7 @@ const cursorSvg = document.querySelector(".mouseCursor svg");
 // goUp
 const goUp = document.querySelector(".goUp");
 
-// a hover cursor
+// a mouseover cursor
 a.forEach(item => {
     item.addEventListener("mouseover", () => {
         cursorSvg.classList.add("over");
@@ -85,7 +85,7 @@ aboutBtn.addEventListener("click", (e) => {
     gnb.classList.remove("active");
 });
 
-// project container link, hover cursor
+// project container link, mouseover cursor
 const prjArray = [
     "./project1/project1.html",
     "./project2/project2.html",
@@ -107,10 +107,10 @@ prj.forEach((project, idx) => {
 moreBtn.addEventListener("click", () => {
     prjBox2.classList.toggle("morePrj");
 });
+// project container moreBtn hover cursor
 moreBtn.addEventListener("mouseover", () => {
     cursorSvg.classList.add("over");
 });
-// project container moreBtn hover cursor
 moreBtn.addEventListener("mouseout", () => {
     cursorSvg.classList.remove("over");
 });
@@ -153,6 +153,7 @@ goUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+// goUp mouseover cursor
 goUp.addEventListener("mouseover", () => {
     cursorSvg.classList.add("over");
 });
