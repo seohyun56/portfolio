@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* SpoqaHanSansNeo */
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    /* bold */
+    src: url(../fonts/SpoqaHanSansNeo-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    /* medium */
+    src: url(../fonts/SpoqaHanSansNeo-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    /* regular */
+    src: url(../fonts/SpoqaHanSansNeo-Regular.woff2) format('woff2');
+}
+
+/* SCDream5 */
+@font-face {
+    font-family: 'SCDream5';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/SCDream6.otf) format('opentype');
+}
+
+/* GoldplayAlt-Bold */
+@font-face {
+    font-family: 'GoldplayAlt';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/GoldplayAlt-Bold.woff2) format('woff2');
+}
+
+/* CooperBlackStd */
+@font-face {
+    font-family: 'CooperBlackStd';
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/CooperBlackStd.woff2) format('woff2');
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
+    <title>달콤커피 제작일지</title>
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../common/images/favicon.ico">
     <!-- 초기화 css -->
@@ -13,12 +13,128 @@
     <link rel="stylesheet" href="../common/style/font.css">
     <!-- project1.css -->
     <link rel="stylesheet" href="./project1.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="./ProjectTablet.css">
+    <link rel="stylesheet" media="(min-width: 1280px)" href="./projectPc.css">
     <!-- css variable -->
     <link rel="stylesheet" href="../common/style/variable.css">
     <!-- index.js -->
     <script defer src="./project1.js"></script>
 </head>
 <body>
-    <h1>프로젝트1</h1>
+    <!-- nav -->
+    <nav>
+        <!-- 로고 -->
+        <h1><a href="../index.html">we<span>st</span>ring</a></h1>
+    </nav>
+    <!-- main -->
+    <main>
+        <div class="title">
+            <span>PC</span>
+            <h2>달콤커피(Dal.komm)</h2>
+        </div>
+        <article class="goal">
+            <h3>1. 목표</h3>
+            <p>달콤커피의 디자인을 가져와 나만의 코드로 동일한 사이트 구현</p>
+        </article>
+        <article class="useSkill">
+            <h3>2. 사용 기술</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+            </ul>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Visual Studio Code</li>
+            </ul>
+        </article>
+        <article class="page">
+            <h3>3. 페이지 구성</h3>
+            <h4>nav</h4>
+            <section>
+                <h5>nav 스크롤 이벤트</h5>
+                <p>이전 scrollY가 현재 scrollY보다 작을 경우 nav style top의 값을 -(nav의 offsetHeight)px만큼 지정</p>
+                <p>이전 scrollY가 현재 scrollY보다 크거나 같을 경우 nav style top의 값을 0으로 지정</p>
+            </section>
+            <section>
+                <h5>nav 배경색 변경</h5>
+                <p>addEventListener("scroll")을 통해 scrollY > 0일 때 classList.add와 classList.remove를 이용하여 변경</p>
+            </section>
+            <h4>header</h4>
+            <section>
+                <h5>swiper 이미지</h5>
+                <p>swiper js를 사용하여 자동으로 넘어가는 swiper 이미지 구현</p>
+            </section>
+            <section>
+                <h5>AOS 라이브러리</h5>
+                <p>aos 라이브러리를 사용하여 페이지 로딩 시 fade-down 효과 구현</p>
+                <p>data-aos(효과), data-aos-easing(재생 속도), data-aos-duration(재생 시간) 사용</p>
+            </section>
+            <h4>main</h4>
+            <section>
+                <h5>img animation</h5>
+                <p>svg path와 css animation 기능을 통해 패턴 이미지에 움직이는 선 구현</p>
+                <p>background-position을 이용하여 계속 재생되는 메뉴 이미지 구현</p>
+            </section>
+            <section>
+                <h5>AOS 라이브러리</h5>
+                <p>aos 라이브러리를 사용하여 스크롤 시 fade, fade-up, fade-down, fade-left, fade-right 효과 구현</p>
+                <p>data-aos, data-aos-easing, data-aos-duration 사용</p>
+            </section>
+            <section>
+                <h5>마우스 좌표</h5>
+                <p>브라우저 기준 마우스 좌표인 clientX, clientY를 사용</p>
+                <p>마우스를 움직이면 circle 이미지들이 좌표에 따라 움직이는 효과 구현</p>
+            </section>
+            <h4>footer</h4>
+            <section>
+                <h5>li hover시 밑줄 효과</h5>
+                <p>::before를 통해 transform: scale(0);과 transform-origin: top-right; 적용</p>
+                <p>transition의 속성값을 transform으로 하여 hover시 scale(1), transform-origin: top-left; 적용</p>
+            </section>
+        </article>
+        <article class="solution">
+            <h3>4. 문제 및 해결</h3>
+            <section>
+                <h4>nav의 메뉴 hover시 소메뉴와 배경이 같이 나오게 할 수 없을까?</h4>
+                <p>대메뉴 ul인 .gnb와 형제관계인 div를 생성하여 .gnb:hover시 div가 나오게 했더니 해결됨</p>
+            </section>
+            <section>
+                <h4>nav의 마지막 메뉴 hover시 div가 안 나오게 할 수 없을까?</h4>
+                <p>addEventListener("mouseover")와 addEventListener("mouseout")사용</p>
+                <p>메뉴에 마우스를 올리면 div의 opacity값 0, 마우스가 떠나면 1이 되게 했더니 해결됨</p>
+            </section>
+            <section>
+                <h4>넘치는 텍스트를 어떻게 구현해야 할까?</h4>
+                <p>dalkommStory의 .storyTxt h3에 text-overflow: ellipsis를 사용하려 했으나 적용이 안 됨</p>
+                <p>시각적으로 똑같이 보이게 하기 위해 텍스트 수정</p>
+            </section>
+            <section>
+                <h4>select의 화살표를 안 보이게 할 수 없을까?</h4>
+                <p>select의 css에 apperance: none;을 적용했더니 해결됨</p>
+            </section>
+        </article>
+        <article class="review">
+            <h3>5. 느낀점</h3>
+        </article>
+        <article class="viewSite">
+            <a href="./dalkomm/index.html" target="_blank">달콤커피 바로가기</a>
+        </article>
+        <!-- pc용 mouse cursor -->
+        <div class="mouseCursor">
+            <svg width="80" height="80" viewBox="0 0 805 805" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M142.836 407.293C125.471 389.929 111.697 369.314 102.299 346.626C92.9014 323.938 88.0645 299.622 88.0645 275.064C88.0645 250.507 92.9014 226.191 102.299 203.503C111.697 180.815 125.471 160.2 142.836 142.835C160.2 125.471 180.815 111.697 203.503 102.299C226.191 92.9014 250.507 88.0645 275.065 88.0645C299.622 88.0645 323.938 92.9014 346.626 102.299C369.314 111.697 389.929 125.471 407.293 142.835" stroke="#30CA44" stroke-width="15"/>
+                <path d="M396.835 142.836C414.2 125.471 434.815 111.697 457.503 102.299C480.191 92.9014 504.507 88.0645 529.064 88.0645C553.622 88.0645 577.938 92.9014 600.626 102.299C623.314 111.697 643.929 125.471 661.293 142.836C678.658 160.2 692.432 180.815 701.83 203.503C711.228 226.191 716.064 250.507 716.064 275.065C716.064 299.622 711.228 323.938 701.83 346.626C692.432 369.314 678.658 389.929 661.293 407.293" stroke="#30CA44" stroke-width="15"/>
+                <path d="M661.293 396.836C678.658 414.201 692.432 434.815 701.83 457.503C711.227 480.191 716.064 504.508 716.064 529.065C716.064 553.622 711.227 577.939 701.83 600.627C692.432 623.315 678.658 643.929 661.293 661.294C643.929 678.658 623.314 692.433 600.626 701.83C577.938 711.228 553.622 716.065 529.064 716.065C504.507 716.065 480.19 711.228 457.503 701.83C434.815 692.433 414.2 678.658 396.835 661.294" stroke="#30CA44" stroke-width="15"/>
+                <path d="M407.293 661.294C389.929 678.658 369.314 692.433 346.626 701.83C323.938 711.228 299.622 716.065 275.064 716.065C250.507 716.065 226.191 711.228 203.503 701.83C180.815 692.433 160.2 678.658 142.836 661.294C125.471 643.929 111.697 623.315 102.299 600.627C92.9014 577.939 88.0645 553.622 88.0645 529.065C88.0645 504.508 92.9014 480.191 102.299 457.503C111.697 434.815 125.471 414.2 142.836 396.836" stroke="#30CA44" stroke-width="15"/>
+            </svg>
+        </div>
+        <!-- goUp -->
+        <div class="goUp">
+            back to top
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+        </div>
+    </main>
+    <footer>© Joo SeoHyun. All Rights Reserved.</footer>
 </body>
 </html>

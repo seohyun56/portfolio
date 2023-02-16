@@ -39,8 +39,19 @@ nav h1 span {
 }
 
 /* main */
-main h2 {
+main .title {
     padding: 50px 0;
+}
+main .title span {
+    color: #4E79E8;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border: 2px solid #4E79E8;
+    margin-right: 5px;
+}
+main .title h2 {
+    margin-top: 10px;
     font-size: 30px;
     font-weight: 700;
 }

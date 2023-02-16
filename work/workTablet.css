@@ -10,8 +10,13 @@ nav {
 }
 
 /* main */
-main h2 {
+main .title {
     padding: 65px 0;
+}
+main .title span {
+    font-size: 18px;
+}
+main .title h2 {
     font-size: 40px;
 }
 main h3 {

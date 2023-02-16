@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>달콤커피</title>
+    <!-- 초기화 css -->
+    <link rel="stylesheet" href="./common/style/reset.css">
+    <!-- font.css -->
+    <link rel="stylesheet" href="./common/style/font.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./common/style/swiper-bundle.min.css">
+    <!-- scroll animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- css variable -->
+    <link rel="stylesheet" href="./common/style/variable.css">
+    <!-- swiper js -->
+    <script defer src="./common/js/swiper-bundle.min.js"></script>
+    <!-- scrol animation js -->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js --> 
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <nav>
+        <!-- 로고 -->
+        <h1><a href="./index.html"><img src="./images/logo.svg" alt="로고"></a></h1>
+        <!-- 메뉴 -->
+        <ul class="gnb">
+            <li>
+                <a href="#">Dal.Komm</a>
+                <ul class="subMenu">
+                    <li><a href="#">브랜드 이야기</a></li>
+                    <li><a href="#">App 소개</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴 · 매장</a>
+                <ul class="subMenu">
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">글로벌 달콤</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">창업안내</a>
+                <ul class="subMenu">
+                    <li><a href="#">가맹점 개설 안내</a></li>
+                    <li><a href="#">창업 상담 신청</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span>새로운 소식</span></a>
+                <ul class="subMenu">
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">달콤 스토리</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span>SHOP</span></a></li>
+        </ul>
+        <div class="gnbHover"></div>
+    </nav>
+    <!-- header -->
+    <header class="swiperContainer" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-duration="1500">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/swiper6.png" alt="스와이퍼1">
+                    <div class="swiperContents">
+                        <p>1월 룰렛 당첨자 발표!</p>
+                        <p>행운의 주인공은 ?!</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper1.jpg" alt="스와이퍼2">
+                    <div class="swiperContents">
+                        <p>딸기 메뉴 주문하고 생일선물 받자!</p>
+                        <p>Happy Birthday to Da</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper2.png" alt="스와이퍼3">
+                    <div class="swiperContents">
+                        <p>달콤 10주년</p>
+                        <p>함께해 주셔서 감사합니다.</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper3.png" alt="스와이퍼4">
+                    <div class="swiperContents">
+                        <p>더 달콤하게 돌아온 룰렛!</p>
+                        <p>2월 행운을 잡아보세요!</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper4.jpg" alt="스와이퍼5">
+                    <div class="swiperContents">
+                        <p>달콤,우주베키스탄에 가다!</p>
+                        <p>NEW 글로벌 시장 오픈 예정!</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper5.png" alt="스와이퍼6">
+                    <div class="swiperContents">
+                        <p>Strawberry Fantasy!</p>
+                        <p>딸기 옆에 딸기, Fantastic</p>
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <article class="imgAnimation">
+            <div class="txtContainer" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                <h2>달콤, 상상이 일상이 되는 곳</h2>
+                <div class="txtBox1">
+                    <p>Dal.Komm Life begins</p>
+                    <p>with imagination</p>
+                </div>
+                <div class="txtBox2">
+                    <p>가장 트랜디한 커피전문점,</p>
+                    <p>그리고 다양한 음악과 문화를 소비하는 맛과 식의 경험을 넘어 향유할 수 있는 공간이 되어</p>
+                    <p>여러분의 달콤한 상상, 행복한 상상을 응원하겠습니다</p>
+                    <p>MZ세대를 위한 PLAYGROUND, 달콤의 공간을 자유롭게 경험하세요</p>
+                </div>
+            </div>
+            <div class="imgAni imgAni1" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                <div class="imgBox">
+                    <img src="./images/patternL.png" alt="이미지패턴1">
+                </div>
+                <svg>
+                    <path class="aniCircle" fill="none" stroke="#ff592e" stroke-width="3" d="M489.514 245.008c0 135.038-109.469 244.509-244.509 244.509S.5 380.046.5 245.008 109.967.5 245.005.5" transform="translate(.768 .765)" />
+                </svg>
+            </div>
+            <div class="imgAni imgAni2" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                <div class="imgBox">
+                    <img src="./images/patternM.png" alt="이미지패턴2">
+                </div>
+            </div>
+            <div class="imgAni imgAni3" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                <div class="imgBox">
+                    <img src="./images/patternS.png" alt="이미지패턴3">
+                </div>
+            </div>
+        </article>
+        <article class="dalkommVideo">
+            <video src="./images/dalkommVideo.mp4" loop muted autoplay></video>
+        </article>
+        <article class="dalkommStory">
+            <h2>Dal.Komm Story</h2>
+            <ul  data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                <li>
+                    <div class="storyImg">
+                        <img src="./images/story1.png" alt="달콤스토리1">
+                    </div>
+                    <div class="storyTxt">
+                        <p>STORE</p>
+                        <!-- <h3>[남양주가운점] 커피구독으로 달콤이랑 매일 만나요!</h3> -->
+                        <h3>[남양주가운점]···</h3>
+                        <h4>아메리카노 구독권 오픈!</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyImg">
+                        <img src="./images/story2.jpg" alt="달콤스토리2">
+                    </div>
+                    <div class="storyTxt">
+                        <p>EVENT</p>
+                        <!-- <h3>테이블오더로 주문하고 생일선물 받자!</h3> -->
+                        <h3>테이블오더로 주문하···</h3>
+                        <h4>Happy Birthday to DalKomm</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="storyImg">
+                        <img src="./images/story3.png" alt="달콤스토리3">
+                    </div>
+                    <div class="storyTxt">
+                        <p>STORE</p>
+                        <!-- <h3>[가락시장역점] 베이커리 퇴근 박스로 GET이득!</h3> -->
+                        <h3>[가락시장역점]···</h3>
+                        <h4>매일 저녁 18시 이후 베이커리 4종 8,000원!</h4>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article class="imgMove">
+            <div class="txtContainer" data-aos="fade" data-aos-duration="800">
+                <h2>달콤이 선사하는 다채로운 경험</h2>
+                <div class="imgMoveTxt">
+                    <p>커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께</p>
+                    <p>비쥬얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다</p>
+                </div>
+            </div>
+            <div class="imgMoving">
+                <div class="menu"></div>
+                <div class="box"></div>
+            </div>
+        </article>
+        <article class="newDalkomm">
+            <div class="txtContainer" data-aos="fade" data-aos-duration="800">
+                <h2>새로워진 달콤을 만나보세요</h2>
+                <p>앱을 사용하는 고객님을 위한 달콤한 혜택이 준비되어 있습니다</p>
+            </div>
+            <div>
+                <ul>
+                    <li data-aos="fade-right" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object01.png" alt="object01">
+                        </div>
+                    </li>
+                    <li data-aos="fade-right" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object02.png" alt="object02">
+                        </div>
+                    </li>
+                    <li data-aos="fade-right" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object03.png" alt="object03">
+                        </div>
+                    </li>
+                    <li data-aos="fade-right" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object04.png" alt="object04">
+                        </div>
+                    </li>
+                    <li data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object05.png" alt="object05">
+                        </div>
+                    </li>
+                    <li data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object06.png" alt="object06">
+                        </div>
+                    </li>
+                    <li data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object07.png" alt="object07">
+                        </div>
+                    </li>
+                    <li data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-duration="1500">
+                        <div class="objectImg">
+                            <img src="./images/object08.png" alt="object08">
+                        </div>
+                    </li>
+                </ul>
+                <div class="imgContainer" data-aos="fade" data-aos-duration="800">
+                    <div class="imgFrame">
+                        <img src="./images/objectPhone.gif" alt="달콤gif">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="supporter">
+            <div class="supporterTxt1" data-aos="fade" data-aos-duration="800">
+                <h2>카페 창업의 꿈,</h2>
+                <h2>달콤이 서포터즈가 되겠습니다</h2>
+            </div>
+            <div class="supporterTxt2" data-aos="fade" data-aos-duration="800" data-aos-delay="50">
+                <p>달콤은 파트너 여러분들의 다양한 창업 조건에 맞는 ‘맞춤형 점포 개설’을 통해</p>
+                <p>카페 창업의 문턱을 낮추고 진정한 상생의 가치를 구현합니다</p>
+            </div>
+            <a href="#">가맹점 개설 안내</a>
+            <div class="mouseImg">
+                <span class="circle"></span>
+                <span class="circleBig"></span>
+                <span class="circleSmall"></span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer1">
+            <img src="./images/logo.svg" alt="로고">
+            <ul class="service">
+                <li>
+                    고객을 위한 달콤
+                    <ul class="serviceDetail">
+                        <li><a href="#">문의하기 (Contact Us)</a></li>
+                        <li><a href="#">고객상담센터 1661-1399</a></li>
+                    </ul>
+                </li>
+                <li>
+                    파트너를 위한 달콤
+                    <ul class="serviceDetail">
+                        <li><a href="#">협력업체 문의</a></li>
+                        <li><a href="#">가맹 문의</a></li>
+                        <li><a href="#">제휴·마케팅 문의</a></li>
+                        <li><a href="#">브랜드 소개서</a></li>
+                    </ul>
+                </li>
+                <li>
+                    개인정보 보호 및 약관
+                    <ul class="serviceDetail">
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li><a href="#">서비스 이용약관</a></li>
+                        <li><a href="#">위치기반서비스 이용약관</a></li>
+                        <li><a href="#">영상정보 처리기기 운영관리 방침</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <div class="site">
+                <select name="familySite" class="familySite">
+                    <option value="familySite">FAMILY SITE</option>
+                    <option value="다날">다날</option>
+                    <option value="다날페이먼트">다날페이먼트</option>
+                    <option value="다날엔터테인먼트">다날엔터테인먼트</option>
+                    <option value="비트코퍼레이션">비트코퍼레이션</option>
+                    <option value="다날핀테크">다날핀테크</option>
+                    <option value="다날재팬">다날 재팬</option>
+                    <option value="플렉스페이">플렉스페이</option>
+                    <option value="쏘시오리빙">쏘시오리빙</option>
+                    <option value="바통">바통</option>
+                    <option value="비밀리">비밀리</option>
+                    <option value="위너아이">위너아이</option>
+                    <option value="페이프로토콜">페이프로토콜</option>
+                </select>
+                <p>포트폴리오 바로가기</p>
+            </div>
+            <div class="info">
+                <div class="copyright">
+                    <p><a href="#">주)다날에프엔비 +</a> | 주소지 : 경기도 성남시 분당구 황새울로 359번길 7, 한국정보공학 3층</p>
+                    <p>대표이사 : 박경철 | 사업자등록번호 : 144-81-09353 | 통신판매업신고 : 제 2016-성남분당-0680 호</p>
+                    <p>Copyright ⓒ 2022 (주)달콤 All Rights Reserved.</p>
+                </div>
+                <div class="app">
+                    <a href="#" class="download">
+                        <img src="./images/apple.svg" alt="애플">
+                        App Store
+                    </a>
+                    <a href="#" class="download">
+                        <img src="./images/google.svg" alt="구글">
+                        Google Play
+                    </a>
+                    <a href="#" class="qrCode"><img src="./images/QRCodeImg.jpg" alt="QR코드"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
