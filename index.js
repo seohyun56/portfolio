@@ -11,6 +11,9 @@ const navA = document.querySelector("nav .gnb li a");
 const navToggle = document.querySelector("nav .toggleBtn");
 // project container
 const prj = document.querySelectorAll(".projectContainer .prjBox .prj");
+const prj1 = document.querySelector(".projectContainer .prjBox .prj1");
+const prj2 = document.querySelector(".projectContainer .prjBox .prj2");
+const prj3 = document.querySelector(".projectContainer .prjBox .prj3");
 const prjBox2 = document.querySelector(".projectContainer .prjBox2");
 const moreBtn = document.querySelector(".projectContainer .moreBtn");
 // skill container
@@ -86,15 +89,15 @@ aboutBtn.addEventListener("click", (e) => {
 });
 
 // project container link, mouseover cursor
-const prjArray = [
-    "./project1/project1.html",
-    "./project2/project2.html",
-    "./project3/project3.html"
-]
+// const prjArray = [
+//     "./project1/project1.html",
+//     "./project2/project2.html",
+//     "./project3/project3.html"
+// ]
 prj.forEach((project, idx) => {
-    project.addEventListener("click", () => {
-        location.href = prjArray[idx];
-    });
+    // project.addEventListener("click", () => {
+    //     location.href = prjArray[idx];
+    // });
     project.addEventListener("mouseover", () => {
         cursorSvg.classList.add("over");
     });
@@ -102,6 +105,16 @@ prj.forEach((project, idx) => {
         cursorSvg.classList.remove("over");
     });
 });
+// project container link
+prj1.addEventListener("click", () => {
+    location.href = "./project1/project1.html"
+})
+prj2.addEventListener("click", () => {
+    location.href = "./project2/project2.html"
+})
+prj3.addEventListener("click", () => {
+    location.href = "./project3/project3.html"
+})
 
 // project container prjBox2 toggle
 moreBtn.addEventListener("click", () => {
