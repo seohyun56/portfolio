@@ -107,13 +107,13 @@ prj.forEach((project, idx) => {
 });
 // project container link
 prj1.addEventListener("click", () => {
-    location.href = "./project1/project1.html"
+    location.href = "./work/work.html"
 })
 prj2.addEventListener("click", () => {
-    location.href = "./project2/project2.html"
+    location.href = "./project1/project1.html"
 })
 prj3.addEventListener("click", () => {
-    location.href = "./project3/project3.html"
+    location.href = "./project2/project2.html"
 })
 
 // project container prjBox2 toggle
