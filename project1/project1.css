@@ -17,6 +17,7 @@ main {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -98,7 +99,6 @@ main .page p, .solution p {
     margin-bottom: 10px;
 }
 main .viewSite a {
-    display: inline-block;
     font-weight: 600;
     font-size: 20px;
     border: 2px solid #000;
