@@ -34,6 +34,9 @@ nav {
 nav.on {
     background-color: #FBF4E4;
 }
+nav h1 {
+    cursor: pointer;
+}
 nav .gnb {
     display: flex;
 }

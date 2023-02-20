@@ -2,6 +2,7 @@
 const as = document.querySelectorAll("a");
 // nav
 const nav = document.querySelector("nav");
+const logo = document.querySelector("nav h1");
 const lastMenu = document.querySelector(".gnb > li:last-child");
 const gnbHover = document.querySelector("nav .gnbHover");
 // header
@@ -21,6 +22,11 @@ as.forEach(a => {
   a.addEventListener("click", e => {
     e.preventDefault();
   })
+})
+
+// 로고 클릭 시 index.html
+logo.addEventListener("click", () => {
+  location.href = "./index.html";
 })
 
 // footer 포트폴리오 바로가기 a
