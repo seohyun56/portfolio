@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+main {
+    padding: 0 180px;
+}
+
+/* nav */
+nav {
+    padding: 20px 180px;
+}
+
+/* main */
+main .title {
+    padding: 65px 0;
+}
+main .title span {
+    font-size: 18px;
+}
+main .title h2 {
+    font-size: 40px;
+}
+main h3 {
+    font-size: 25px;
+}
+main h4 {
+    font-size: 20px;
+}
+main h5 {
+    font-size: 18px
+}
+main p {
+    font-size: 16px;
+}
+main .useSkill ul li {
+    font-size: 16px;
+}
+main .useSkill ul:last-child li {
+    font-size: 13px;
+}
+main .viewSite a {
+    font-size: 25px;
+}
+
+/* footer */
+footer {
+    padding: 100px 180px 12px;
+    font-size: 15px;
+}
+
+/* goUp */
+.goUp {
+    font-size: 15px;
+    right: 180px;
+    bottom: 5px;
+}
+.goUp svg {
+    width: 15px;
+    margin-top: 3px;
+}
