@@ -20,8 +20,7 @@ const moreBtn = document.querySelector(".projectContainer .moreBtn");
 const skillContainer = document.querySelector(".skillContainer");
 // about container
 const aboutContainer = document.querySelector(".aboutContainer");
-const txt1 = document.querySelector(".consoleText .autoTextBox .txt1");
-const txt2 = document.querySelector(".consoleText .autoTextBox .txt2");
+const txt1 = document.querySelector(".consoleText .txt1");
 // mouse cursor
 const mouseCursor = document.querySelector(".mouseCursor");
 const cursorSvg = document.querySelector(".mouseCursor svg");
@@ -129,7 +128,7 @@ moreBtn.addEventListener("mouseout", () => {
 });
 
 // about container auto text1
-const text1 = '맡은 일에 "최선"을 다하겠습니다.';
+const text1 = 'console.log("신입 웹퍼블리셔 주서현");';
 let n = 0; 
 const txtInterval1 = setInterval(() => {
     if (n < text1.length) {
@@ -140,18 +139,30 @@ const txtInterval1 = setInterval(() => {
         n = 0;
     };
 }, 230);
+// about container auto text1
+// const text1 = '맡은 일에 "최선"을 다하겠습니다.';
+// let n = 0; 
+// const txtInterval1 = setInterval(() => {
+//     if (n < text1.length) {
+//         txt1.textContent += text1[n];
+//         n++;
+//     } else {
+//         txt1.textContent = "";
+//         n = 0;
+//     };
+// }, 230);
 // about container auto text2
-const text2 = '변화에 맞게 끊임없이 "노력"하겠습니다.';
-let i = 0;
-const txtInterval2 = setInterval(() => {
-    if (i < text2.length) {
-        txt2.textContent += text2[i];
-        i++;
-    } else {
-        txt2.textContent = "";
-        i = 0;
-    };
-}, 200);
+// const text2 = '변화에 맞게 끊임없이 "노력"하겠습니다.';
+// let i = 0;
+// const txtInterval2 = setInterval(() => {
+//     if (i < text2.length) {
+//         txt2.textContent += text2[i];
+//         i++;
+//     } else {
+//         txt2.textContent = "";
+//         i = 0;
+//     };
+// }, 200);
 
 // mouse cursor
 addEventListener("mousemove", e => {

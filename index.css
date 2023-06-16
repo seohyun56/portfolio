@@ -235,25 +235,7 @@ nav .toggleBtn {
     font-size: 13px;
     margin-bottom: 15px;
 }
-.aboutContainer .consoleText .autoTextBox {
-    padding-bottom: 10px;
-    display: flex;
-}
-.aboutContainer .consoleText .autoTextBox svg {  
-    margin-right: 10px;  
-    font-weight: 500;
-    font-size: 20px;
-    width: 8px;
-}
-.aboutContainer .consoleText .autoTextBox svg path {  
-    fill: #4E79E8;
-}
-.aboutContainer .consoleText .autoTextBox p {    
-    font-weight: 500;
-    font-size: 15px;
-    height: 17px;
-}
-.aboutContainer .consoleText .autoTextBox p::after {
+.aboutContainer .consoleText h3::after {
     content: '';
     margin-left: 10px;
     border-right: 5px solid #424242;
@@ -262,6 +244,26 @@ nav .toggleBtn {
 @keyframes cursor {
     from { border-right: 5px solid #4E79E8; }
     to { border-right: 5px solid #424242; }
+}
+.aboutContainer .consoleText .resultTextBox {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+}
+.aboutContainer .consoleText .resultTextBox svg {  
+    padding-top: 3px;
+    margin-right: 10px;  
+    font-weight: 500;
+    font-size: 25px;
+    width: 10px;
+}
+.aboutContainer .consoleText .resultTextBox svg path {  
+    fill: #4E79E8;
+}
+.aboutContainer .consoleText .resultTextBox p {    
+    font-weight: 500;
+    font-size: 20px;
+    height: 20px;
 }
 
 /* contact */
