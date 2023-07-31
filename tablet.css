@@ -62,10 +62,10 @@ nav .toggleBtn {
 .aboutContainer .consoleText h3 {
     font-size: 23px;
 }
-.aboutContainer .consoleText .autoTextBox svg {  
+.aboutContainer .consoleText .resultTextBox svg {  
     width: 10px;
 }
-.aboutContainer .consoleText .autoTextBox p {    
+.aboutContainer .consoleText .resultTextBox p {    
     font-size: 25px;
     height: 27px;
 }

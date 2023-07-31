@@ -120,10 +120,10 @@ nav .gnb li a:hover::before {
 .aboutContainer .consoleText h3 {
     font-size: 30px;
 }
-.aboutContainer .consoleText .autoTextBox svg {  
+.aboutContainer .consoleText .resultTextBox svg {  
     width: 12px;
 }
-.aboutContainer .consoleText .autoTextBox p {    
+.aboutContainer .consoleText .resultTextBox p {    
     font-size: 35px;
     height: 37px;
 }

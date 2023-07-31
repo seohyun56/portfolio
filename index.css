@@ -232,7 +232,7 @@ nav .toggleBtn {
 }
 .aboutContainer .consoleText h3 {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 .aboutContainer .consoleText h3::after {
@@ -262,8 +262,8 @@ nav .toggleBtn {
 }
 .aboutContainer .consoleText .resultTextBox p {    
     font-weight: 500;
-    font-size: 20px;
-    height: 20px;
+    font-size: 15px;
+    height: 15px;
 }
 
 /* contact */
